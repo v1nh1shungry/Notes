@@ -30,6 +30,7 @@
 ## `-fvisibility-inline-hidden`
 
 这是 `-fvisibility=hidden` 的精细化版本，专门针对内联函数：
+
 - 只将内联函数的可见性设为 `hidden`
 - 保持其他函数的默认可见性
 
@@ -60,11 +61,13 @@
 **编译器技术：全局值编号与代码重排**
 
 GVN(Global Value Numbering) 是一种中间代码优化技术：
+
 - 为每个计算的表达式分配唯一的值编号
 - 使用这些编号识别相同的表达式
 - 基于此执行各种优化，如冗余计算消除和常量传播
 
 Sink 和 Hoist 是GVN的扩展优化：
+
 - GVN Hoist：将计算提升到循环或其他控制结构之外，减少重复计算
 - GVN Sink：将计算下沉到真正需要结果的地方，避免在不必要路径上执行
 
@@ -72,4 +75,4 @@ Sink 和 Hoist 是GVN的扩展优化：
 
 ## References
 
-* [State of the art for reducing executable size with heavily optimized program](https://discourse.llvm.org/t/state-of-the-art-for-reducing-executable-size-with-heavily-optimized-program/87952)
+- [State of the art for reducing executable size with heavily optimized program](https://discourse.llvm.org/t/state-of-the-art-for-reducing-executable-size-with-heavily-optimized-program/87952)
