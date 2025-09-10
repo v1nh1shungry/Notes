@@ -21,3 +21,7 @@
 * `^<FROM>^<TO>` 语法可以将上次命令中第一次出现的 `<FROM>` 替换为 `<TO>` ，并执行该命令；
 * `$OLDPWD` 变量存储上次所在目录；
 * `!<CMD>` 语法可以运行上次该命令及其全部参数，但这样做有风险，建议先使用 `!<CMD>:p` 来预览命令；
+
+## References
+
+* [Ghost in the Shell](https://vermaden.wordpress.com/ghost-in-the-shell/)
